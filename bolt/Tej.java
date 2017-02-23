@@ -3,7 +3,7 @@ import java.util.Date;
 
 public class Tej {
 
-	private long vonalKod;
+	
 	
 	private final int LITER = 10;
 	private final int FELLITER = 5;
@@ -11,20 +11,19 @@ public class Tej {
 	private final double ZSIROS = 3.6;
 	private final double FELZSIROS = 2.8;
 	
-	private int urtaratalom;
-	private String gyarto;
-	private Date szavatossagiIdo;
-	private double zsirtartalom;
-	private long ar;
+	protected long vonalKod;
+	protected int urtaratalom;
+	protected String gyarto;
+	protected Date szavatossagiIdo;
+	protected double zsirtartalom;
 	
-	public Tej(long vonalKod, int urtaratalom, String gyarto, Date szavatossagiIdo, double zsirtartalom, long ar) {
+	public Tej(long vonalKod, int urtaratalom, String gyarto, Date szavatossagiIdo, double zsirtartalom) {
 		super();
 		this.vonalKod = vonalKod;
 		this.urtaratalom = urtaratalom;
 		this.gyarto = gyarto;
 		this.szavatossagiIdo = szavatossagiIdo;
 		this.zsirtartalom = zsirtartalom;
-		this.ar = ar;
 	}
 
 	public boolean joMeg(){
@@ -51,14 +50,11 @@ public class Tej {
 		return zsirtartalom;
 	}
 
-	public long getAr() {
-		return ar;
-	}
 
 	@Override
 	public String toString() {
 		return "Tej [urtaratalom=" + urtaratalom + ", gyarto=" + gyarto + ", szavatossagiIdo=" + szavatossagiIdo
-				+ ", zsirtartalom=" + zsirtartalom + ", ar=" + ar + "]";
+				+ ", zsirtartalom=" + zsirtartalom + "]";
 	}
 	
 	
