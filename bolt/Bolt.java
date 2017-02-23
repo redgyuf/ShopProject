@@ -1,15 +1,14 @@
 package bolt;
 
-import java.util.Vector;
+import java.util.Hashtable;
 
 public class Bolt {
 	private String nev;
 	private String cim;
 	private String tulajdonos;
-	private Vector tejpult;
-	private int flag;
+	private Hashtable tejpult;
 	
-	public Bolt(String nev, String cim, String tulajdonos, Vector tejpult) {
+	public Bolt(String nev, String cim, String tulajdonos, Hashtable tejpult) {
 		super();
 		this.nev = nev;
 		this.cim = cim;
