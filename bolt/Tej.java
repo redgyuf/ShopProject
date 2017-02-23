@@ -4,6 +4,7 @@ import java.util.Date;
 public class Tej {
 
 	private long vonalKod;
+	
 	private final int LITER = 10;
 	private final int FELLITER = 5;
 	private final int POHAR = 2;
@@ -16,16 +17,22 @@ public class Tej {
 	private double zsirtartalom;
 	private long ar;
 	
-	public Tej(int urtaratalom, String gyarto, Date szavatossagiIdo, double zsirtartalom, long ar) {
+	public Tej(long vonalKod, int urtaratalom, String gyarto, Date szavatossagiIdo, double zsirtartalom, long ar) {
+		super();
+		this.vonalKod = vonalKod;
 		this.urtaratalom = urtaratalom;
 		this.gyarto = gyarto;
 		this.szavatossagiIdo = szavatossagiIdo;
 		this.zsirtartalom = zsirtartalom;
 		this.ar = ar;
 	}
-	
+
 	public boolean joMeg(){
 		return false;	
+	}
+	
+	public long getVonalKod() {
+		return vonalKod;
 	}
 
 	public int getUrtaratalom() {
