@@ -1,4 +1,4 @@
-package bolt;
+
 
 import java.util.Hashtable;
 
@@ -29,8 +29,8 @@ public class Bolt {
 		return false;
 	}
 	
-	public Tej vasrolTej(Tej m){
-		return m;		
+	public Tej vasrolTej(Long vonalKod){
+		return null;		
 	}
 	
 	public void feltoltTej(Tej m){
