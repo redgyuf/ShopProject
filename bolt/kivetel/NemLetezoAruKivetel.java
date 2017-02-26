@@ -1,6 +1,8 @@
 package bolt.kivetel;
 
-public class NemLetezoAruKivetel extends Exception{
+import bolt.BoltKivetel;
+
+public class NemLetezoAruKivetel extends BoltKivetel{
 	public NemLetezoAruKivetel(String message){
 		System.out.println(message);
 	}
