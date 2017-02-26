@@ -3,6 +3,7 @@ package bolt;
 
 import java.util.Hashtable;
 
+import bolt.aruk.Elelmiszer;
 import bolt.aruk.Tej;
 
 public class Bolt {
@@ -28,16 +29,27 @@ public class Bolt {
 
 
 
+	private boolean vanMegAdottAru(Class<?> c){
+		return false;
+	}
+	
 	public boolean vanMegTej(){
 		return false;
 	}
 	
-	public Tej vasrolTej(Long vonalKod){
-		return null;		
+	public boolean vanMegSajt(){
+		return false;
 	}
 	
-	public void feltoltTej(Tej m){
-		
+	public void vasrolElelmiszert(Long vonalKod, long mennyiseg){		
+	}
+	public void torolElelmiszert(Long vonalKod){		
+	}
+	
+	public void feltoltElelmiszerrel(Long vonalKod, long mennyiseg){		
+	}
+	
+	public void feltoltUjElelmiszerrel(Elelmiszer e, long mennyiseg, long ar){	
 	}
 
 	public String getNev() {
@@ -53,41 +65,41 @@ public class Bolt {
 	}
 	
 	class BoltBejegyzes {
-		private Tej t;
-		private int mennyiseg;
-		private int ar;
+		private Elelmiszer e;
+		private long mennyiseg;
+		private long ar;
 		
-		public BoltBejegyzes(Tej t, int mennyiseg, int ar){
-			this.t = t;
+		public BoltBejegyzes(Elelmiszer e, long mennyiseg, long ar){
+			this.e = e;
 			this.mennyiseg = mennyiseg;
 			this.ar = ar;
 		}
 		
-		public Tej getT(){
-			return t;			
+		public Elelmiszer getElelmiszer(){
+			return e;			
 		}
 		
-		public void setT(Tej t){
-			
+		public void setElelmiszer(Elelmiszer e){
+			this.e = e;
 		}
 		
-		public int getMennyiseg(){
+		public long getMennyiseg(){
 			return mennyiseg;
 		}
 		
-		public void setMennyiseg(int mennyiseg){
+		public void setMennyiseg(long mennyiseg){
 			this.mennyiseg = mennyiseg;
 		}
 		
-		public void adMennyiseg(int mennyiseg){
+		public void adMennyiseg(long mennyiseg){
 			this.mennyiseg += mennyiseg;
 		}
 		
-		public void levonMennyiseg(int mennyiseg){
+		public void levonMennyiseg(long mennyiseg){
 			this.mennyiseg -= mennyiseg;
 		}
 		
-		public int getAr(){
+		public long getAr(){
 			return ar;
 		}
 		
