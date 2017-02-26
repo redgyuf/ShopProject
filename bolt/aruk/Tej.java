@@ -2,7 +2,7 @@ package bolt.aruk;
 
 import java.util.Date;
 
-public abstract class Tej {
+public abstract class Tej extends Elelmiszer {
 
 	
 	
