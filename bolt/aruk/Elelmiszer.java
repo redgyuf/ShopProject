@@ -1,5 +1,7 @@
 package bolt.aruk;
 
-public abstract class Elelmiszer {
+import bolt.Aru;
+
+public abstract class Elelmiszer extends Aru{
 
 }
