@@ -3,6 +3,8 @@ package bolt;
 
 import java.util.Hashtable;
 
+import bolt.aruk.Tej;
+
 public class Bolt {
 	private String nev;
 	private String cim;
