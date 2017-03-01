@@ -13,7 +13,6 @@ public class Bolt {
 	private Hashtable tejpult;
 	
 	public Bolt(String nev, String cim, String tulajdonos, Hashtable tejpult) {
-		super();
 		this.nev = nev;
 		this.cim = cim;
 		this.tulajdonos = tulajdonos;
@@ -21,7 +20,6 @@ public class Bolt {
 	}	
 		
 	public Bolt(String nev, String cim, String tulajdonos) {
-		super();
 		this.nev = nev;
 		this.cim = cim;
 		this.tulajdonos = tulajdonos;
@@ -34,15 +32,17 @@ public class Bolt {
 	}
 	
 	public boolean vanMegTej(){
-		return false;
+		return !tejpult.isEmpty();
 	}
 	
 	public boolean vanMegSajt(){
 		return false;
 	}
 	
-	public void vasrolElelmiszert(Long vonalKod, long mennyiseg){		
+	public void vasrolElelmiszert(Long vonalKod, long mennyiseg){	
+		
 	}
+	
 	public void torolElelmiszert(Long vonalKod){		
 	}
 	
